@@ -6,11 +6,11 @@
 .Volkswagen-ID.Buzz-5-hex { color: #BFA317; }
 
 /* Color Theme Swatches in RGBA */
-.Volkswagen-ID.Buzz-1-rgba { color: rgba(128, 65, 191, 1); }
+/* .Volkswagen-ID.Buzz-1-rgba { color: rgba(128, 65, 191, 1); }
 .Volkswagen-ID.Buzz-2-rgba { color: rgba(94, 61, 140, 1); }
 .Volkswagen-ID.Buzz-3-rgba { color: rgba(191, 179, 21, 1); }
 .Volkswagen-ID.Buzz-4-rgba { color: rgba(89, 84, 10, 1); }
-.Volkswagen-ID.Buzz-5-rgba { color: rgba(191, 163, 22, 1); }
+.Volkswagen-ID.Buzz-5-rgba { color: rgba(191, 163, 22, 1); } */
 
 /* Color Theme Swatches in HSLA */
 /* .Volkswagen-ID.Buzz-1-hsla { color: hsla(270, 49, 50, 1); }
@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-    background-color: rgba(128, 65, 191, .8);
+    background-color: rgba(191, 163, 22, .9);
     grid-column: 1/4;
     grid-row: 1/2;
     display: grid;
@@ -37,7 +37,7 @@ body {
 h1 {
     grid-column: 2/3;
     margin-top: 175px;
-    font-size: 60px;    
+    font-size: 100px; 
 }
 
 section {
@@ -48,19 +48,19 @@ section {
 }
 
 .bot {
-    background-color: rgba(191, 163, 22, .9);
+    background-color: rgba(128, 65, 191, .7);
 }
 
 article {
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     margin-top: 50px;
     display: flex;
     flex-direction: column;
 }
 
 div {
-    height: 25px;
-    width: 300px;
+    height: 35px;
+    width: 200px;
     display: flex;
     
 }
@@ -78,11 +78,11 @@ h2 {
 }
 
 .Buzz3 {
-    background-color: rgba(191, 179, 21,1);
+    background-color: rgba(191, 179, 21, 1);
 }
 
 .Buzz4 {
-    background-color: rgba(89, 84, 10, .5);
+    background-color: rgba(89, 84, 10, .8);
 }
 
 p {
@@ -90,31 +90,82 @@ p {
     font-size: 15px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
+
+body {
+    display: grid;
+    }
 
 .container {
-    height: 25vh;
+    height: 33vh;
 }
+
 h1 {
-    font-size: 30px;
+    font-size: 75px;
+    margin-top: 60px;
+    text-align: center;
+    color: rgba(94, 61, 140, 1)
 }
 
 .bot {
     flex-direction: column;
-    align-items: center;
-    height: 75vh;
+    justify-content: center;
+    align-items: flex-start;
+    height: 67vh;
+    display: grid;
+    grid-template-rows: repeat(3, 33%)
+}
+
+.article {
+    margin-bottom: 140px;
+    display: grid;
+    margin: 25px;
+
+}
+
+.partone {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.Buzz2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.parttwo {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.Buzz3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.partthree {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.Buzz4  {
+    grid-column: 2/3;
+    grid-row: 3/4;
 }
 
 div {
-    height: 15px;
-    width: 200px;    
+    height: 20px;
+    width: 125px;
+    display: grid;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 25px;
+    margin-top: 25px;
+    
 }
 
 p {
-    font-size: 10px;
+    font-size: 13px;
 }
 }
